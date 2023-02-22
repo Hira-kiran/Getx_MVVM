@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:getxmvvm/data/exceptions.dart';
+import 'package:getxmvvm/utils/utils.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -13,7 +13,9 @@ class HomeScreen extends StatelessWidget {
       body: TextButton(
         child: const Text("Internet exception"),
         onPressed: () {
-           ServerException("Server Exception");
+          /*  throw ServerException("Server Exception"); */
+          Utils.toastClass("Clicked");
+          Utils.snackbar("Hi", "How are you");
         },
       ),
     );

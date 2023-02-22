@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getxmvvm/res/routes/routes.dart';
 import 'package:getxmvvm/view/splash_Screen.dart';
 
 void main() {
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.purple,
       ),
       home: const SplashScreen(),
-      getPages:AppRoutes.approutes(),
+      // getPages:AppRoutes.approutes(),
     );
   }
 }
