@@ -26,3 +26,12 @@ class RequestTimeOut extends AppException {
   RequestTimeOut([String? message])
       : super(message, "Request Timeout, Try Again!");
 }
+
+class InvalidUrl extends AppException {
+  InvalidUrl([String? message])
+      : super(message, "Response Not Found, Try Again!");
+}
+class FatchDataException extends AppException {
+ FatchDataException([String? message])
+      : super(message, "Error while communication, Try Again!");
+}
